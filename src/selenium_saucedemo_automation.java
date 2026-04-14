@@ -25,8 +25,8 @@ public class selenium_saucedemo_automation {
 		        // ---------------- SELECT PRODUCT ----------------
 		        driver.findElement(By.className("inventory_item_name")).click();
 
-		        // Print product details
-		        System.out.println(driver.findElement(By.className("inventory_details_desc")).getText());
+		        // click on particular product
+		        driver.findElement(By.xpath("//div[@data-test='inventory-item-name']")).click();
 
 		        // Add to cart
 		        driver.findElement(By.id("add-to-cart")).click();
